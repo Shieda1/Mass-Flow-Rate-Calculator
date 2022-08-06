@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mass Flow Rate Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- radio -->
+  <input type="radio" id="massFlowRateRadio" name="variables" checked>
+  <label for="massFlowRateRadio">Mass Flow Rate</label>
+
+  <input type="radio" id="fluidDensityRadio" name="variables">
+  <label for="fluidDensityRadio">Fluid Density</label>
+
+  <input type="radio" id="velocityoftheFluidRadio" name="variables">
+  <label for="velocityoftheFluidRadio">Velocity of the Fluid</label>
+
+  <input type="radio" id="flowAreaRadio" name="variables">
+  <label for="flowAreaRadio">Flow Area</label><br><br>
+  <!-- end radio -->
+  
+  <label for="v1" id="variable1">(ρ) Fluid Density (kg/m³)</label>
+  <input type="number" id="v1"><br><br>
+  
+  <label for="v2" id="variable2">(V) Velocity of the Fluid (m/s)</label>
+  <input type="number" id="v2"><br><br>
+  
+  <label for="v3" id="variable3">(A) Flow Area (m²)</label>
+  <input type="number" id="v3"><br><br>
+
+  <button id="btn">compute</button>
+
+  <p id="result"></p>
+  <script src="app.js"></script>
+</body>
+</html>
